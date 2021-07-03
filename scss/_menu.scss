@@ -13,6 +13,19 @@
     margin: 0 0 5px 0;
     background: set-text-color($primary-color);
     @include easeOut;
+    animation: blink 2s linear infinite;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: .5;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   //Rotate Into X With Menu Lines
